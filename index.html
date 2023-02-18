@@ -6,48 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guided Tour</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="header__nav">
-            <a href="#" class="header__nav-logo">
-                <img src="./img/LogoNorway.png" alt="Logo Norway">
-            </a>
-            <div class="header__nav-menu">
-                <a class="nav-menu__item" href="#">About Us</a>
-                <a class="nav-menu__item" href="#">Itinerary</a>
-                <a class="nav-menu__item" href="#">Testimonials</a>
-                <a class="nav-menu__item" href="#">Blog</a>
-                <a class="nav-menu__item" href="#">Contacts</a>
-                <a class="nav-menu__item" href="#">Join Us →</a>
+            <div class="header__nav-wrapper">
+                <a href="#header" class="header__nav-logo-container">
+                    <img class="header__nav-logo" src="./img/LogoNorway.png" alt="Logo Norway">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+            <div class="header__nav-menu-wrapper">
+                <div class="header__nav-menu">
+                    <a class="nav-menu__item" href="#about-us">About Us</a>
+                    <a class="nav-menu__item" href="#places">Itinerary</a>
+                    <a class="nav-menu__item" href="#testimonials">Testimonials</a>
+                    <a class="nav-menu__item" href="#contacts">Contacts</a>
+                    <a class="nav-menu__item nav-menu__item-btn" href="#contact-us">Join Us →</a>
+                </div>
             </div>
         </nav>
         <div class="header__banner">
             <div class="header__banner-text">
                 <p class="header__banner-subtitle">
-                    <span class="subtitle-slash">-</span>
+                    <span class="subtitle-slash">━</span>
                     YOUR PERFECT JOURNEY TO
                 </p>
                 <h1 class="header__banner-title">Norway</h1>
             </div>
             <div>
                 <div class="header__banner-link">
-                    <img src="./img/icon/icon-play-video.svg" alt="Watch video">
-                    <a href="#">━ Watch the promo video!</a>
+                    <img class="header__banner-link-icon" src="./img/icon/icon-play-video.svg" alt="Watch video">
+                    <a class="header__banner-link-text" href="#about-norway__video">━ Watch the promo video!</a>
                 </div>
                 <div class="header__banner-info">
-                    <video class="header__banner-video" src="./video/NORWAYCinematic.mp4" controls autoplay muted></video>
-                    <p>Next Trip to Norway</p>
-                    <p>$2300 | 17 NOV. - 22 NOV.</p>
-                    <p>10 days of travel and 5 unique places in Norway are waiting for us ...</p>
-                    <a href="#">Read more →</a>
+                    <div class="header__banner-video-wrapper">
+                        <video class="header__banner-video" src="./video/NORWAYCinematic.mp4" controls autoplay muted></video>
+                    </div>
+                    <p class="header__banner-info-title">Next Trip to Norway</p>
+                    <p class="header__banner-info-price">$2300 | 17 NOV. - 22 NOV.</p>
+                    <p class="header__banner-info-text">10 days of travel and 5 unique places in Norway are waiting for us ...</p>
+                    <a href="#places" class="header__banner-info-link">Read more →</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div>
                 <div>
                     <p class="subtitle">
@@ -184,11 +193,11 @@
                     <p class="about-norway__card-text">Waterfalls</p>
                 </div>
             </div>
-            <div>
+            <div id="about-norway__video">
                 <video class="about-norway__video" src="./video/NORWAY_Cinematic_Travel.mp4" controls></video>
             </div>
         </section>
-        <section class="places">
+        <section class="places" id="places">
             <div class="places__header">
                 <p class="subtitle">
                     <span class="subtitle-slash">-</span>
@@ -415,8 +424,164 @@
                 <p class="stunning-spots__quote-autor">Knut Hamsun</p>
             </div>
         </section>
+        <section class="faq">
+            <div class="faq__content">
+                <div class="faq__header">
+                    <p class="subtitle">
+                        <span class="subtitle-slash">-</span>
+                        FAQ
+                    </p>
+                    <h2 class="title-light">Explore our expertly <span>crafted tours</span></h2>
+                    <p class="faq__header-text">
+                        We tried to make our Norway tour as comfortable and interesting as possible. If you still have questions,
+                        you can contact us directly or fill out the form below.
+                    </p>
+                </div>
+                <div class="faq__accordion">
+                    <div class="faq__accordion-item">
+                        <div class="accordion-tem__question">Does this tour require physical fitness?</div>
+                        <div class="accordion-tem__answer">This tour is suitable for untrained tourists. No cliff climbing, we promise.</div>
+                    </div>
+                    <div class="faq__accordion-item">
+                        <div class="accordion-tem__question">Will I be able to see the Northern Lights?</div>
+                        <div class="accordion-tem__answer">
+                            We cannot promise you this. The Northern Lights only appear in winter under special circumstances. But
+                            we will hunt it in Tromsø.
+                        </div>
+                    </div>
+                    <div class="faq__accordion-item">
+                        <div class="accordion-tem__question">Can I take my children with me on the tour?</div>
+                        <div class="accordion-tem__answer">Yes, we offer a 50% discount for children.</div>
+                    </div>
+                    <div class="faq__accordion-item">
+                        <div class="accordion-tem__question">Can I join you not in Oslo, but in another city?</div>
+                        <div class="accordion-tem__answer">
+                            Depending on the weather conditions, our route may change, so we strongly recommend starting with other
+                            tourists from Oslo. We do not change the route to pick up tourists on the way.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__photo">
+                <img src="img/man_with_backpack.jpeg" alt="Man with backpack">
+            </div>
+        </section>
+        <section class="contact-us" id="contact-us">
+            <div class="contact-us__header">
+                <p class="subtitle">
+                    <span class="subtitle-slash">-</span>
+                    CONTACT US
+                </p>
+                <h2 class="title-light">Book your journey!</h2>
+                <p class="contact-us__header-text">
+                    Complete the form below, and we will contact you soon to discuss the details!
+                </p>
+            </div>
+            <div class="contacts-u__form-container">
+                <form class="contact-us__form" action="#" method="post">
+                    <input class="contact-us__input" type="text" placeholder="Your Name" name="user-name">
+                    <input class="contact-us__input" type="tel" placeholder="Your Phone" name="user-phone">
+                    <input class="contact-us__input" type="email" placeholder="Your email" name="user-email">
+                    <input class="contact-us__input" type="date" placeholder="Choose date" name="date-of-trip">
+                    <button class="contact-us__input-btn" type="submit">Request a quote</button>
+                </form>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials__header">
+                <p class="subtitle">
+                    <span class="subtitle-slash">-</span>
+                    TESTIMONIALS
+                </p>
+                <h2 class="title-dark">Travelers Share Their Experience</h2>
+                <p class="testimonials__header-text">
+                    Norway leaves no one indifferent. Its stunning nature, friendly people, beautiful cities, and delicious cuisine will be
+                    remembered forever.
+                </p>
+            </div>
+            <div class="testimonials-carousel">
+                <button class="testimonials__carousel-btn-prev">&#x276E;</button>
+                <div class="testimonials__carousel-content">
+                    <img class="testimonials__carousel-photo" src="img/testimonials-img1.png" alt="personal photo">
+                    <h3 class="testimonials__carousel-nickname">Cole Tiers</h3>
+                    <p class="testimonials__carousel-text">
+                        I wanted to see Norway since childhood when I saw a stylish house right in the middle of the Norwegian forest in some
+                        magazine. I thought then that I also want to live in such a house. This dream came true a few months ago on a tour of
+                        Norway. I am very happy! Thanks, guys!
+                    </p>
+                    <p class="testimonials__carousel-date">October 28, 2021</p>
+                </div>
+                <div class="testimonials__carousel-content">
+                    <img class="testimonials__carousel-photo" src="img/testimonials-img2.png" alt="personal photo">
+                    <h3 class="testimonials__carousel-nickname">Lilland Forester</h3>
+                    <p class="testimonials__carousel-text">
+                        We went on this tour with our daughter, she was 5 years old. I was worried that it would be difficult for her but
+                        everything went great. We spent nights in good hotels with excellent breakfasts. My daughter always had something to
+                        eat, and the nature in Norway fascinated her even more than us!
+                    </p>
+                    <p class="testimonials__carousel-date">May 13, 2022</p>
+                </div>
+                <div class="testimonials__carousel-content">
+                    <img class="testimonials__carousel-photo" src="img/testimonials-img3.png" alt="personal photo">
+                    <h3 class="testimonials__carousel-nickname">Alice Hendricks</h3>
+                    <p class="testimonials__carousel-text">
+                        I still can't believe I have seen the Northern Lights with my own eyes! That was incredible! When we arrived in Tromsø,
+                        it was constantly snowing, the weather was bad, and the guide said that we were out of luck, most likely. But on the
+                        last night, right at midnight, the clouds left, and I saw it! It was magical!
+                    </p>
+                    <p class="testimonials__carousel-date">January 12, 2022</p>
+                </div>
+                <button class="testimonials__carousel_btn-next">&#x276F;</button>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div id="contacts">
+            <div class="footer__card">
+                <img class="footer__card-icon" src="img/footer_email_logo.png" alt="Email logo">
+                <p class="footer__card-title">Write Us</p>
+                <a href="#" class="footer__card-text">norway-tour@email.com</a>
+            </div>
+            <div class="footer__card">
+                <img class="footer__card-icon" src="img/footer_marker_logo.png" alt="Map marker logo">
+                <p class="footer__card-title">Visit Us</p>
+                <p class="footer__card-text">Tollbugata 15C, 0152 Oslo</p>
+            </div>
+            <div class="footer__card">
+                <img class="footer__card-icon" src="img/footer_phone_logo.png" alt="Phone logo">
+                <p class="footer__card-title">Call Us</p>
+                <p class="footer__card-text">+1 (234) 567 89 00</p>
+            </div>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="img/LogoNorway.png" alt="Logo Norway">
+                </a>
+            </div>
+            <div class="footer__nav-menu">
+                <a class="footer__nav-menu-item" href="#">About Us</a>
+                <a class="footer__nav-menu-item" href="#">Itinerary</a>
+                <a class="footer__nav-menu-item" href="#">Testimonials</a>
+                <a class="nfooter__nav-menu-item" href="#">Contacts</a>
+            </div>
+        </div>
+        <div class="footer__rights">
+            <div class="footer__rights-text">© Created by</div>
+            <div class="footer__rights-links">
+                <a href="#">
+                    <img src="img/footer_youtube_logo.png" alt="YouTube logo">
+                </a>
+                <a href="#">
+                    <img src="img/footer_fb_logo.png" alt="Facebook logo">
+                </a>
+                <a href="#">
+                    <img src="img/footer_instagram_logo.png" alt="Instagram logo">
+                </a>
+            </div>
+            <div class="footer__rights-text">All rights Reserved</div>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
 </body>
-
 </html>
