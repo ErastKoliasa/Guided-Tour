@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    font-family: Roboto, sans-serif;
+    /* Variables */
+    --sign-start-color: #ee2e14;
+    --background-dark: #232428;
+    --chapter-font-color-dark: #6f7380;
+    --chapter-font-color-light: #ffffff99;
+    --title-font-color-dark: #505155;
+    --title-font-color-light: #fff;
+    --background-bottom-color: #14a9ee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.subtitle-slash {
+    color: var(--sign-start-color);
+    font-size: 13px;
+    font-weight: 900;
+}
