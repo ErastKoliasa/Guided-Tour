@@ -1,0 +1,157 @@
+body.lock {
+    overflow: hidden;
+  }
+
+.header {
+    background-image: url(../img/header-norway-background.png);
+    background-size: cover;
+    margin: auto;
+    padding: 30px 24px 0;
+    background-position: 100% 100%;
+}
+
+.header__nav-wrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    z-index: 10;
+}
+
+.header__nav-logo {
+    width: 188px;
+    height: 34px;
+}
+
+.header__nav-menu-wrapper {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-dark);
+    z-index: 2;
+    transition: top 0.3s ease-in;
+    padding: 15px 24px 50px 24px;
+    transition: top 0.3s ease-in 0.1s;
+    overflow: hidden;
+    margin: auto;
+}
+
+.header__nav-menu-wrapper.active {
+    top: 0;
+}
+
+.header__nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.nav-menu__item {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-menu__item-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.nav-menu__item-btn:hover {
+    background-color: var(--title-font-color-light);
+    color: var(--beckground-dark);
+}
+
+.header__banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 10px 10px;
+    padding-bottom: 90px;
+}
+
+.header__banner-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
+.header__banner-title {
+    font-family: "Playfair Display";
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.header__banner-link {
+    margin: 50px 0px;
+}
+
+.header__banner-link-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.header__banner-link-text {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: 50%;
+}
+
+.header__banner-video-wrapper {
+    min-width: 272px;
+    min-height: 176px;
+}
+
+.header__banner-video {
+    width: 100%;
+    height: 100%;
+    border: 7px solid rgb(255, 255, 255)
+}
+
+.header__banner-info-title {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 20px 0px;
+}
+
+.header__banner-info-price {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+
+.header__banner-info-text {
+    color: var(--chapter-font-color-light);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.header__banner-info-link {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
