@@ -1,0 +1,72 @@
+.tour_itinerary {
+    background-image: url(../img/itinerary_background.png);
+    background-size: cover;
+    margin: auto;
+    padding: 90px 40px 30px 50px;
+    background-position: 100% 100%;
+}
+
+.tour_itinerary-map-wrapper {
+    min-width: 272px;
+    min-height: 176px;
+}
+
+.norway_map {
+    width: 100%;
+}
+
+.tour_itinerary-content-header {
+    margin-bottom: 40px;
+}
+
+.tour_itinerary-content {
+    margin-top: 50px;
+}
+
+.tour_itinerary__accent-title {
+    color: var(--title-font-color-dark);
+}
+
+.tour_itinerary-header-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.9px;
+    color: var(--chapter-font-color-light);
+}
+
+.tour_itinerary-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px
+}
+
+.tour_itinerary-wrapper_card-img {
+    margin-right: 20px;
+}
+
+.tour_itinerary-wrapper-icon {
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.tour_itinerary-icon {
+    margin: 10px 12px;
+    width: 26px;
+    height: 26px;
+}
+
+.tour_itinerary_card-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: var(--title-font-color-light);
+}
+
+.tour_itinerary_card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: var(--chapter-font-color-light);
+}
