@@ -45,3 +45,70 @@
     line-height: 22.4px;
     color: var(--chapter-font-color-dark);
 }
+
+@media (min-width: 768px) {
+    .about-us {
+        background-position: 60% 100%;
+    }
+
+    .about-us__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-us__header-wrapper{
+        margin-right: 15px;
+    }
+
+    .title {
+        font-size: 39px;
+    }
+
+    .about-us__description {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .about-us__cards-wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 5% 0% 20%;
+    }
+
+    .about-us__card {
+        margin: 50px 20px;
+    }
+}
+
+@media (min-width: 990px){
+    .about-us{
+        padding: 100px 20px;
+        
+    }
+}
+
+@media (min-width: 1060px) {
+    .about-us{
+        padding-right: 70px;
+        padding-left: 70px;
+        background-position: 75%;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .about-us__description {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .about-us__cards-wrapper {
+        justify-content: center;
+    }
+
+    .about-us__card {
+        width: 350px;
+    }
+}
