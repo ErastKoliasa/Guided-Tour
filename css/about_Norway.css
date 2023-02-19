@@ -48,5 +48,67 @@
 }
 
 .about-norway__video {
+    margin-top: 20px;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .about-norway__header-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-norway__wrapper-img {
+        width: auto;
+        height: 306px;
+        margin-top: 45px;
+    }
+
+    .about-norway__wrapper-text-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-norway__title-content,
+    .about-norway__text-content {
+        padding: 0px 20px;
+    }
+
+    .about-norway__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 150px;
+    }
+}
+
+@media (min-width: 990px) {
+    .about-norway {
+        padding-right: 50px;
+        padding-left: 70px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .about-norway__card-text {
+        font-size: 15px
+    }
+}
+
+@media (min-width: 1060px) {
+    .about-norway {
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+
+    .about-norway__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-norway__card-item {
+        margin: 0px 20px;
+    }
 }
