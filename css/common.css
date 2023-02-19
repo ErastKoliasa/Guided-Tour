@@ -24,3 +24,32 @@
     font-size: 13px;
     font-weight: 900;
 }
+
+.subtitle {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.subtitle-dark {
+    color: var(--chapter-font-color-dark);
+}
+
+.subtitle-light {
+    color: var(--chapter-font-color-light);
+}
+
+.title {
+    font-family: "Playfair Display";
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.title-dark {
+    color: var(--title-font-color-dark);
+}
+
+.title-light {
+    color: var(--title-font-color-light);
+}
