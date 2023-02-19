@@ -55,7 +55,7 @@ body.lock {
 }
 
 .nav-menu__item {
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color-light);
     text-decoration: none;
     padding: 10px;
     margin-bottom: 10px;
@@ -66,7 +66,7 @@ body.lock {
 .nav-menu__item-btn {
     padding: 10px 20px;
     font-size: 15px;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid var(--title-font-color-light);
     margin-top: 10px;
 }
 
@@ -86,7 +86,7 @@ body.lock {
 .header__banner-subtitle {
     font-size: 13px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color-light);
     margin-top: 30px;
 }
 
@@ -94,7 +94,7 @@ body.lock {
     font-family: "Playfair Display";
     font-size: 70px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color-light);
 }
 
 .header__banner-link {
@@ -107,7 +107,7 @@ body.lock {
 }
 
 .header__banner-link-text {
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color-light);
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
@@ -122,11 +122,11 @@ body.lock {
 .header__banner-video {
     width: 100%;
     height: 100%;
-    border: 7px solid rgb(255, 255, 255)
+    border: 9px solid var(--title-font-color-light)
 }
 
 .header__banner-info-title {
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color-light);
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -134,7 +134,7 @@ body.lock {
 }
 
 .header__banner-info-price {
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color-light);
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 20px
@@ -149,9 +149,107 @@ body.lock {
 }
 
 .header__banner-info-link {
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color-light);
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-decoration: none;
+}
+
+@media (min-width: 768px){
+    .header__banner-title {
+        font-size: 125px;
+        line-height: 125px;
+    }
+
+    .header__banner-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 90px;
+    }
+
+    .header__banner-link {
+        display: flex;
+        align-items: end;
+        margin: 0px;
+    }
+
+    .header__banner-info {
+        width: 330px;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 990px) {
+    .header {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__nav-menu-wrapper {
+        position: relative;
+        top: 0;
+        background-color: #00000000;
+        padding: 0px;
+    }
+
+    .header__nav-menu {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        margin-right: 20px ;
+    }
+
+    .nav-menu__item {
+        font-size: 14px;
+    }
+
+    .nav-menu__item-btn {
+        padding: 5px 20px;
+        font-size: 15px;
+        border: 3px solid var(--title-font-color-light);
+        margin-top: 0px;
+    }
+
+    .header__banner-text {
+        margin-top: 80px;
+    }
+
+    .header__banner-title {
+        font-size: 165px;
+        line-height: 165px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .header {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+
+    .header__banner-subtitle {
+        font-size: 16px;
+    }
+
+    .header__banner-title {
+        font-size: 180px;
+        line-height: 180px;
+        margin-top: 40px;
+    }
+
+    .header__banner-info {
+        width: 430px;
+        margin-right: 30px;
+        margin-top: -50px;
+    }
+
 }

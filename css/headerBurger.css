@@ -49,3 +49,9 @@
     bottom: 40%;
     transform: rotate(45deg);
 }
+
+@media (min-width: 990px) {
+    .header__burger {
+        display: none;
+    }
+}
