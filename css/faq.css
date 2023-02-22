@@ -66,5 +66,29 @@
         padding-left: 40px;
         padding-right: 40px;
         display: flex;
+        justify-content: space-between;
+    }
+
+    .faq__photo-wrapper {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 990px) {
+    .faq {
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+
+    .accordion-item {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .faq {
+        padding-left: 120px;
+        padding-right: 120px;
     }
 }
