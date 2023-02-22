@@ -1,0 +1,71 @@
+.stunning-spots {
+    margin: auto;
+    padding: 90px 20px 90px;
+    background-color: var(--background-dark);
+}
+
+.stunning-spots__accent-title {
+    color: var(--title-font-color-dark);
+    letter-spacing: 1.02px;
+}
+
+.stunning-spots__header-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.9px;
+    letter-spacing: 0.51px;
+    color: var(--chapter-font-color-light);
+    margin-bottom: 50px;
+}
+
+.stunning-spots__carousel {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 8 / 7;
+    object-position: 50% 70%;
+    cursor: pointer;
+}
+
+.stunning-spots__quote {
+    margin-top: 120px;
+    border-bottom:  2px solid var(--title-font-color-dark);
+}
+
+.quotes__with-lines {
+    display: flex;
+    align-items: center;
+}
+
+.quote__line {
+    border-bottom: 2px solid var(--title-font-color-dark);
+    height: 1px;
+    width: 100%;
+}
+
+.stunning-spots__quote-icon {
+    width: 34px;
+    margin: 0px 20px;
+}
+
+.stunning-spots__quote-text {
+    font-family: "Playfair Display";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 33.84px;
+    color: var(--title-font-color-light);
+    text-align: center;
+    padding: 28px 10px;
+    margin: 0px;
+}
+
+.stunning-spots__quote-autor {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28.9px;
+    letter-spacing: 0.51px;
+    color: var(--chapter-font-color-light);
+    text-align: center;
+    margin-bottom: 28px;
+}
