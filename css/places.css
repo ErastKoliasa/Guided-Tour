@@ -1,6 +1,10 @@
 .places {
     margin: auto;
-    padding: 10px 20px 90px;
+    padding: 40px 20px 90px;
+}
+
+.title {
+    margin-bottom: 40px;
 }
 
 .places-header__text {
@@ -8,7 +12,7 @@
     font-weight: 400;
     line-height: 32.3px;
     color: var(--title-font-color-dark);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .places__nav {
@@ -36,6 +40,10 @@
     margin-right: 30px;
 }
 
+.places__nav__tab-title:hover {
+    color: var(--background-dark);
+}
+
 .places__nav__tab:active {
     font-weight: 900;
     color: var(--title-font-color-light);
@@ -55,7 +63,7 @@
     letter-spacing: 0.03em;
     line-height: 1.7;
     white-space: nowrap;
-    color: var(--title-font-color-dark);
+    color: var(--chapter-font-color-dark);
     margin-bottom: 10px;
 }
 
@@ -72,15 +80,12 @@
     flex-direction: column;
 }
 
-.places-card__photo-wrapper {
-    min-width: 272px;
-    min-height: 176px;
-}
-
 .places-card__photo {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
 
 .places-card__info {
     padding: 40px;
@@ -91,7 +96,7 @@
     font-weight: 600;
     line-height: 19.2px;
     color: var(--chapter-font-color-dark);
-    margin: 10px 0px 40px;
+    margin: 10px 0px 30px;
 }
 
 .places-info__title {
@@ -162,4 +167,79 @@
 
 .places-info__book-now:hover {
     background-color: var(--background-dark);
+}
+
+@media (min-width: 768px){
+    .places {
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-bottom: 30px;
+    }
+
+    .places__header {
+        width: 480px;
+    }
+
+    .content__tab__active {
+        flex-direction: row;
+    }
+
+    .places-card__info {
+        padding-bottom: 50px;
+        margin-left: 10px;
+    }
+
+    .places-info__title {
+        font-size: 33px;
+    }
+
+    .places-info__night-hotel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .places-info__night {
+        margin: 0px;
+    }
+}
+
+@media (min-width: 990px) {
+    .places {
+        padding-right: 50px;
+        padding-left: 70px;
+    }
+
+    .places__header {
+        width: 590px;
+    }
+
+    .places-info__title {
+        font-size: 36px;
+    }
+
+    .places-info__hotel,
+    .places-info__details-item-text {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .places {
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+
+    .places__header {
+        width: 736px;
+    }
+
+    .places-card__info {
+        margin-left: 30px;
+    }
+
+    .places-info__hotel {
+        margin-right: 90px;
+    }
 }
