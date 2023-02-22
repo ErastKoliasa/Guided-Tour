@@ -25,7 +25,6 @@
     height: 100%;
     aspect-ratio: 8 / 7;
     object-position: 50% 70%;
-    cursor: pointer;
 }
 
 .stunning-spots__quote {
@@ -68,4 +67,86 @@
     color: var(--chapter-font-color-light);
     text-align: center;
     margin-bottom: 28px;
+}
+
+@media (min-width: 768px){
+    .stunning-spots {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .stunning-spots__header-text {
+        width: 480px;
+    }
+
+    .stunning-spots__carousel-wrapper {
+        margin: auto;
+        max-width: 680px;
+        height: 590px;
+    }
+
+    .stunning-spots__quote-wrapper {
+        padding: 0px 90px;
+    }
+
+    .stunning-spots__quote-icon {
+        width: 47px;
+    }
+
+    .stunning-spots__quote-text {
+        font-size: 19px;
+        line-height: 35.72px;
+        margin: 10px 0px;
+    }
+
+    .stunning-spots__quote-autor {
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 990px) {
+    .stunning-spots {
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+
+    .stunning-spots__header-text {
+        min-width: 900px;
+    }
+
+    .stunning-spots__quote-text {
+        font-size: 21px;
+        line-height: 39.48px;
+    }
+
+    .stunning-spots__quote-wrapper {
+        padding: 0px 130px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .stunning-spots {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .stunning-spots__header {
+        margin-bottom: 30px;
+    }
+
+    .stunning-spots__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .stunning-spots__header-text {
+        margin-left: 40px;
+        min-width: 600px;
+    }
+
+    .stunning-spots__quote-wrapper {
+        padding: 0px 200px;
+    }
 }
