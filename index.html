@@ -209,18 +209,18 @@
         </section>
         <section class="places" id="places">
             <div class="places__header">
-                <p class="subtitle">
-                    <span class="subtitle-slash">-</span>
+                <p class="subtitle subtitle-dark">
+                    <span class="subtitle-slash">━</span>
                     PLACES
                 </p>
-                <h2 class="title-dark">Where do we go?</h2>
+                <h2 class="title title-dark">Where do we go?</h2>
                 <p class="places-header__text">
                     10 days of travel and 5 unique places in Norway are waiting for us. Read more about each place from our itinerary below.
                 </p>
             </div>
             <div class="places__list">
                 <div class="places__nav">
-                  <div class="places__nav__tab">
+                  <div class="places__nav__tab nav__tab__active">
                     <p class="places__nav__tab-title">Oslo</p>
                   </div>
                   <div class="places__nav__tab">
@@ -237,9 +237,9 @@
                   </div>
                 </div>
                 <div class="places__content-tab">
-                    <div class="places__card">
-                        <div class="places-card__photo">
-                            <img src="img/oslo.jpeg" alt="Oslo">
+                    <div class="places__card content__tab__active">
+                        <div class="places-card__photo-wrapper">
+                            <img class="places-card__photo" src="img/oslo.jpeg" alt="Oslo">
                         </div>
                         <div class="places-card__info">
                             <p class="places-info__point">Oslo - First point</p>
@@ -266,12 +266,14 @@
                                     <p class="places-info__details-item-text"> - Transfer from the airport</p>
                                 </div>
                             </div>
-                            <a class="places-info__book-now" href="#">Book now →</a>
+                            <div class="places-info__book-now-wrapper">  
+                                <a class="places-info__book-now" href="#contact-us">Book now →</a>
+                            </div>
                         </div>
                     </div>
                     <div class="places__card">
-                        <div class="places-card__photo">
-                            <img src="img/trondheim.jpeg" alt="Trondheim">
+                        <div class="places-card__photo-wrapper">
+                            <img class="places-card__photo" src="img/trondheim.jpeg" alt="Trondheim">
                         </div>
                         <div class="places-card__info">
                             <p class="places-info__point">Trondheim - Second point</p>
@@ -298,12 +300,14 @@
                                     <p class="places-info__details-item-text"> - 3-hours walking tour</p>
                                 </div>
                             </div>
-                            <a class="places-info__book-now" href="#">Book now →</a>
+                            <div class="places-info__book-now-wrapper">  
+                                <a class="places-info__book-now" href="#contact-us">Book now →</a>
+                            </div>
                         </div>
                     </div>
                     <div class="places__card">
-                        <div class="places-card__photo">
-                            <img src="img/bodo.jpeg" alt="Bodø">
+                        <div class="places-card__photo-wrapper">
+                            <img class="places-card__photo" src="img/bodo.jpeg" alt="Bodø">
                         </div>
                         <div class="places-card__info">
                             <p class="places-info__point">Bodø - Third point</p>
@@ -330,12 +334,14 @@
                                     <p class="places-info__details-item-text"> - Cable car ride</p>
                                 </div>
                             </div>
-                            <a class="places-info__book-now" href="#">Book now →</a>
+                            <div class="places-info__book-now-wrapper">  
+                                <a class="places-info__book-now" href="#contact-us">Book now →</a>
+                            </div>
                         </div>
                     </div>
                     <div class="places__card">
-                        <div class="places-card__photo">
-                            <img src="img/lofoten_islands.jpeg" alt="Lofoten Islands">
+                        <div class="places-card__photo-wrapper">
+                            <img class="places-card__photo" src="img/lofoten_islands.jpeg" alt="Lofoten Islands">
                         </div>
                         <div class="places-card__info">
                             <p class="places-info__point">Lofoten Islands - Fourth point</p>
@@ -362,12 +368,14 @@
                                     <p class="places-info__details-item-text"> - Boat trip</p>
                                 </div>
                             </div>
-                            <a class="places-info__book-now" href="#">Book now →</a>
+                            <div class="places-info__book-now-wrapper">  
+                                <a class="places-info__book-now" href="#contact-us">Book now →</a>
+                            </div>
                         </div>
                     </div>
                     <div class="places__card">
-                        <div class="places-card__photo">
-                            <img src="img/tromso.jpeg" alt="Tromsø">
+                        <div class="places-card__photo-wrapper">
+                            <img class="places-card__photo" src="img/tromso.jpeg" alt="Tromsø">
                         </div>
                         <div class="places-card__info">
                             <p class="places-info__point">Tromsø - Final point</p>
@@ -394,7 +402,9 @@
                                     <p class="places-info__details-item-text"> - Northern Lights</p>
                                 </div>
                             </div>
-                            <a class="places-info__book-now" href="#">Book now →</a>
+                            <div class="places-info__book-now-wrapper">  
+                                <a class="places-info__book-now" href="#contact-us">Book now →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -593,5 +603,6 @@
         </div>
     </footer>
     <script src="js/header.js"></script>
+    <script src="js/places.js"></script>
 </body>
 </html>
