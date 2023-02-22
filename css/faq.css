@@ -1,0 +1,70 @@
+.faq {
+    margin: auto;
+    padding: 10px 40px 90px;
+    background-color: var(--background-dark);
+}
+
+.faq__accent-title {
+    color: var(--title-font-color-dark);
+    letter-spacing: 1.02px;
+}
+
+.faq__header-text {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32.3px;
+    color: var(--chapter-font-color-light);
+    margin: 60px 0px;
+}
+
+.accordion {
+    --bs-accordion-active-color: var(--title-font-color-light);
+    --bs-accordion-btn-bg: var(--background-dark);
+    --bs-accordion-active-bg: var(--background-dark);
+    --bs-accordion-inner-border-radius: 0px;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+    
+}
+
+.accordion-button {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.51px;
+    line-height: 28.9px;
+    color: var(--title-font-color-light);
+    border: none;
+}
+
+.accordion-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: var(--chapter-font-color-light);
+    background-color: var(--background-dark);
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--title-font-color-dark);
+}
+
+.faq__photo-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 60px 30px 0px;
+}
+
+.faq__photo {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 0.86;
+}
+
+@media (min-width: 768px){
+    .faq {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+    }
+}
