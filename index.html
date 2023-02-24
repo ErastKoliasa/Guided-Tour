@@ -601,49 +601,76 @@
         </section>
         <section class="testimonials" id="testimonials">
             <div class="testimonials__header">
-                <p class="subtitle">
-                    <span class="subtitle-slash">-</span>
+                <p class="subtitle subtitle-dark">
+                    <span class="subtitle-slash">━</span>
                     TESTIMONIALS
                 </p>
-                <h2 class="title-dark">Travelers Share Their Experience</h2>
+                <h2 class="title title-dark">Travelers Share Their Experience</h2>
                 <p class="testimonials__header-text">
-                    Norway leaves no one indifferent. Its stunning nature, friendly people, beautiful cities, and delicious cuisine will be
-                    remembered forever.
+                    Norway leaves no one indifferent. Its stunning nature, friendly people, beautiful cities, and delicious
+                    cuisine will be remembered forever.
                 </p>
             </div>
-            <div class="testimonials-carousel">
-                <button class="testimonials__carousel-btn-prev">&#x276E;</button>
-                <div class="testimonials__carousel-content">
-                    <img class="testimonials__carousel-photo" src="img/testimonials-img1.png" alt="personal photo">
-                    <h3 class="testimonials__carousel-nickname">Cole Tiers</h3>
-                    <p class="testimonials__carousel-text">
-                        I wanted to see Norway since childhood when I saw a stylish house right in the middle of the Norwegian forest in some
-                        magazine. I thought then that I also want to live in such a house. This dream came true a few months ago on a tour of
-                        Norway. I am very happy! Thanks, guys!
-                    </p>
-                    <p class="testimonials__carousel-date">October 28, 2021</p>
+        
+            <div id="testimonials__carousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonials__carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonials__carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonials__carousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="testimonials__carousel-content">
-                    <img class="testimonials__carousel-photo" src="img/testimonials-img2.png" alt="personal photo">
-                    <h3 class="testimonials__carousel-nickname">Lilland Forester</h3>
-                    <p class="testimonials__carousel-text">
-                        We went on this tour with our daughter, she was 5 years old. I was worried that it would be difficult for her but
-                        everything went great. We spent nights in good hotels with excellent breakfasts. My daughter always had something to
-                        eat, and the nature in Norway fascinated her even more than us!
-                    </p>
-                    <p class="testimonials__carousel-date">May 13, 2022</p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonials__carousel-img-wrapper">
+                            <img src="img/testimonials-img1.png" class="d-block w-100 testimonials__carousel-img" alt="personal photo">
+                        </div>
+                        <p class="testimonials__carousel-nickname">Cole Tiers</p>
+                        <p class="testimonials__carousel-text">
+                            I wanted to see Norway since childhood when I saw a stylish house right in the middle of the Norwegian forest in some
+                            magazine. I thought then that I also want to live in such a house. This dream came true a few months ago on a tour of
+                            Norway. I am very happy! Thanks, guys!
+                        </p>
+                        <p class="testimonials__carousel-date">October 28, 2021</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonials__carousel-img-wrapper">
+                            <img src="img/testimonials-img2.png" class="d-block w-100 testimonials__carousel-img" alt="personal photo">
+                        </div>
+                        <p class="testimonials__carousel-nickname">Lilland Forester</p>
+                        <p class="testimonials__carousel-text">
+                            We went on this tour with our daughter, she was 5 years old. I was worried that it would be difficult for her but
+                            everything went great. We spent nights in good hotels with excellent breakfasts. My daughter always
+                            had something to eat, and the nature in Norway fascinated her even more than us!
+                        </p>
+                        <p class="testimonials__carousel-date">May 13, 2022</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonials__carousel-img-wrapper">
+                            <img src="img/testimonials-img3.png" class="d-block w-100 testimonials__carousel-img" alt="personal photo">
+                        </div>
+                        <p class="testimonials__carousel-nickname">Alice Hendricks</p>
+                        <p class="testimonials__carousel-text">
+                            I still can't believe I have seen the Northern Lights with my own eyes! That was incredible! When we arrived in Tromsø,
+                            it was constantly snowing, the weather was bad, and the guide said that we were out of luck, most likely. But on the
+                            last night, right at midnight, the clouds left, and I saw it! It was magical!
+                        </p>
+                        <p class="testimonials__carousel-date">January 12, 2022</p>
+        
+                    </div>
                 </div>
-                <div class="testimonials__carousel-content">
-                    <img class="testimonials__carousel-photo" src="img/testimonials-img3.png" alt="personal photo">
-                    <h3 class="testimonials__carousel-nickname">Alice Hendricks</h3>
-                    <p class="testimonials__carousel-text">
-                        I still can't believe I have seen the Northern Lights with my own eyes! That was incredible! When we arrived in Tromsø,
-                        it was constantly snowing, the weather was bad, and the guide said that we were out of luck, most likely. But on the
-                        last night, right at midnight, the clouds left, and I saw it! It was magical!
-                    </p>
-                    <p class="testimonials__carousel-date">January 12, 2022</p>
-                </div>
-                <button class="testimonials__carousel_btn-next">&#x276F;</button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonials__carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonials__carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             </div>
         </section>
     </main>
