@@ -2,6 +2,7 @@
     background-image: url('../img/contact__bg.png');
     background-size: cover;
     background-attachment: fixed;
+    background-position: 100% 100%;
     margin: auto;
     padding: 80px 40px;
 }
@@ -49,4 +50,25 @@
 .contact-us__input-btn:hover {
     background-color: var(--title-font-color-light);
     color: var(--background-dark);
+}
+
+@media (min-width: 768px){
+    .contact-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 990px) {
+    .contact-us {
+        padding: 130px 50px 130px 70px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .contact-us {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
 }
