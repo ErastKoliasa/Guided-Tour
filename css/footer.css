@@ -1,0 +1,79 @@
+.footer {
+    background-image: url('../img/footer_mountains_prllx.jpg');
+    background-size: cover;
+    background-position: 100% 100%;
+    margin: auto;
+    padding: 90px 40px 0px;
+    text-align: center;
+}
+
+.footer__card {
+    background-color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+.footer__card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.footer__card-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    color: var(--title-font-color-light);
+    margin-bottom: 30px;
+}
+
+.footer__card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: var(--title-font-color-light);
+}
+
+.footer__logo-wrapper {
+    margin-bottom: 30px;
+}
+
+.footer__logo {
+    width: 176px;
+    height: 32px;
+}
+
+.footer__nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__nav-menu-item {
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--chapter-font-color-dark);
+    margin-bottom: 20px;
+}
+
+.footer__nav-menu-item:hover {
+    color: var(--title-font-color-light);
+}
+
+.footer__rights-text {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    line-height: 19.2px;
+    margin-bottom: 20px;
+    color: var(--title-font-color-light);
+}
+
+.footer__rights-links-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.footer__rights-text-reserved {
+    padding: 20px 0px;
+}

@@ -611,7 +611,6 @@
                     cuisine will be remembered forever.
                 </p>
             </div>
-        
             <div id="testimonials__carousel" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#testimonials__carousel" data-bs-slide-to="0" class="active"
@@ -674,12 +673,12 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div id="contacts">
+    <footer class="footer" id="contacts">
+        <div>
             <div class="footer__card">
                 <img class="footer__card-icon" src="img/footer_email_logo.png" alt="Email logo">
                 <p class="footer__card-title">Write Us</p>
-                <a href="#" class="footer__card-text">norway-tour@email.com</a>
+                <p class="footer__card-text">norway-tour@email.com</p>
             </div>
             <div class="footer__card">
                 <img class="footer__card-icon" src="img/footer_marker_logo.png" alt="Map marker logo">
@@ -693,32 +692,26 @@
             </div>
         </div>
         <div class="footer__nav">
-            <div class="footer__logo">
-                <a href="#">
-                    <img src="img/LogoNorway.png" alt="Logo Norway">
+            <div class="footer__logo-wrapper">
+                <a href="#header">
+                    <img class="footer__logo" src="img/LogoNorway.png" alt="Logo Norway">
                 </a>
             </div>
             <div class="footer__nav-menu">
-                <a class="footer__nav-menu-item" href="#">About Us</a>
-                <a class="footer__nav-menu-item" href="#">Itinerary</a>
-                <a class="footer__nav-menu-item" href="#">Testimonials</a>
-                <a class="nfooter__nav-menu-item" href="#">Contacts</a>
+                <a class="footer__nav-menu-item" href="#about-us">About Us</a>
+                <a class="footer__nav-menu-item" href="#places">Itinerary</a>
+                <a class="footer__nav-menu-item" href="#testimonials">Testimonials</a>
+                <a class="footer__nav-menu-item" href="#contacts">Contacts</a>
             </div>
         </div>
         <div class="footer__rights">
             <div class="footer__rights-text">© Created by</div>
             <div class="footer__rights-links">
-                <a href="#">
-                    <img src="img/footer_youtube_logo.png" alt="YouTube logo">
-                </a>
-                <a href="#">
-                    <img src="img/footer_fb_logo.png" alt="Facebook logo">
-                </a>
-                <a href="#">
-                    <img src="img/footer_instagram_logo.png" alt="Instagram logo">
-                </a>
+                <a href="https://www.youtube.com/"><img class="footer__rights-links-icon" src="img/footer_youtube_logo.png" alt="YouTube logo"></a>
+                <a href="https://www.facebook.com/"><img class="footer__rights-links-icon" src="img/footer_fb_logo.png" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/"><img class="footer__rights-links-icon" src="img/footer_instagram_logo.png" alt="Instagram logo"></a>
             </div>
-            <div class="footer__rights-text">All rights Reserved</div>
+            <div class="footer__rights-text footer__rights-text-reserved">All rights Reserved</div>
         </div>
     </footer>
     <script src="js/header.js"></script>
