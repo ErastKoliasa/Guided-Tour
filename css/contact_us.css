@@ -52,6 +52,10 @@
     color: var(--background-dark);
 }
 
+#contact-form-status{
+    color: var(--title-font-color-light);
+}
+
 @media (min-width: 768px){
     .contact-us {
         display: grid;

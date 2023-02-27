@@ -27,6 +27,12 @@
     object-position: 50% 70%;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--background-dark);
+    border-radius: 50%;
+}
+
 .stunning-spots__quote {
     margin-top: 120px;
     border-bottom:  2px solid var(--title-font-color-dark);

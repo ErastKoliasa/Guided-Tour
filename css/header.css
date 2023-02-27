@@ -158,6 +158,11 @@ body.lock {
 }
 
 @media (min-width: 768px){
+    .header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .header__banner-title {
         font-size: 125px;
         line-height: 125px;
@@ -233,8 +238,8 @@ body.lock {
 
 @media (min-width: 1060px) {
     .header {
-        padding-right: 70px;
-        padding-left: 70px;
+        padding-right: 120px;
+        padding-left: 120px;
     }
 
     .header__banner-subtitle {
