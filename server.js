@@ -1,10 +1,5 @@
-// This is simple sample how to serve static website and save form data to file with NodeJS
-// Author: programming mentor
-// Usage:
-// 0. Initialize package.json
-//    npm init -y
 // 1. Install dependencies: 
-//    npm i express 
+//    npm install 
 // 2. Run server:
 //    node server.js
 
